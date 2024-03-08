@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      host: 172.19.0.2
+      port: 27023
+      database: db
