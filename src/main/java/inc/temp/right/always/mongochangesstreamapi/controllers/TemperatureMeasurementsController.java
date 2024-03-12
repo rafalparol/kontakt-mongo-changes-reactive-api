@@ -31,4 +31,12 @@ public class TemperatureMeasurementsController {
     public Mono<TemperatureMeasurement> anomaly(@RequestBody TemperatureMeasurement temperatureMeasurement) {
         return temperatureMeasurementsRepository.save(temperatureMeasurement);
     }
+
+    public void setTemperatureMeasurementsService(TemperatureMeasurementsService temperatureMeasurementsService) {
+        this.temperatureMeasurementsService = temperatureMeasurementsService;
+    }
+
+    public void setTemperatureMeasurementsRepository(TemperatureMeasurementsRepository temperatureMeasurementsRepository) {
+        this.temperatureMeasurementsRepository = temperatureMeasurementsRepository;
+    }
 }
